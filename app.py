@@ -25,11 +25,9 @@ def readcsv():
 				result[row[6]].append( float(row[1][1:]))
 
 				amount = sum(result[row[6]])
-				#makedict['id'] = makedict['values'].append(float( row[1][1:]))
 			else:
 				if row[1] != 'Order Amount':
 					result[row[6]] = [ float( row[1][1:] )]					
-					#makedict['id'] = makedict['values'].append(float( row[1][1:]))				
 	
 
 	dictlist = []	
